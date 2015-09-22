@@ -1,0 +1,28 @@
+body {
+  padding-top: 50px;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+.navbar-brand {
+  font-weight: 800;
+}
+
+.navbar-brand img {
+  width: 24px;
+}
+
+.avatar {
+  max-width: 480px;
+  margin-bottom: 20px;
+}
+
+.nav-tabs {
+  margin-bottom: 10px;
+}
+
+.page-header {
+	margin-bottom: 30%;
+}

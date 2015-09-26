@@ -2,7 +2,6 @@
 	var app = angular.module('spotify', []);
 
 	app.controller('ArtistController', function () {
-		this.tab = 1;
 
 		this.artist = {
 			name: "La Beriso",
@@ -18,12 +17,28 @@
 				otranochemas: 462914
 			}
 		};
+	});
+
+	app.controller('TabsController', function () {
+		this.tab = 1;
 
 		this.selectTab = function (tab) {
 			this.tab = tab;
 		};
-
 	});
 
+	app.controller('CommentsController', function () {
+		this.comments = [];
+		this.show = false;
+	});
+
+
+
+	app.filter('imageify', function () {
+		return function (input) {
+			var url = "img/" + input.toLowerCase() + ".jpg";
+			return url;
+		};
+	});
 
 })();

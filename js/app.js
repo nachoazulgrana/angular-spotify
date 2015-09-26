@@ -30,6 +30,10 @@
 	app.controller('CommentsController', function () {
 		this.comments = [];
 		this.show = false;
+
+		this.toggle = function () {
+			this.show = !this.show;
+		};
 	});
 
 

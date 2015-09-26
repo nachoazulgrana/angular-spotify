@@ -26,7 +26,7 @@
 	  </div>
 	</div>
 
-	<div class="container">
+	<div class="container-fluid">
 		
 		<section ng-controller="ArtistController as artCtrl">
 			<div class="page-header col-md-6">
@@ -105,12 +105,14 @@
 						<span class="badge">{{artCtrl.artist.stats.otranochemas}} veces</span>
 					</li>
 				</ul>
+		</section>
 
-			<!-- comments -->
-			<button class="btn btn-primary">Show comments <span class="badge">2</span></button>
-			<div class="panel panel-primary">
+		<!-- comments -->
+		<div ng-controller="CommentsController as cmtsCtrl">
+			<button ng-hide="cmtsCtrl.show" ng-click="cmtsCtrl.toggle()" class="btn btn-primary">Show comments <span class="badge">{{ cmtsCtrl.comments.length }}</span></button>
+			<div ng-show="cmtsCtrl.show" class="panel panel-primary">
 			  <div class="panel-heading">
-			    <h1 class="panel-title">Comments <button class="close pull-right">&times;</button></h1>
+			    <h1 class="panel-title">Comments <button class="close pull-right" ng-click="cmtsCtrl.toggle()">&times;</button></h1>
 			  </div>
 			  <div class="panel-body">
 			    <form class="form-horizontal" role="form">
@@ -136,17 +138,11 @@
 			        Comment by <a href="mailto:pepe@pepe.com">pepe@pepe.com</a> on <span>Sep 12, 2014, 11:00:00 PM</span>
 			      </footer>
 			    </blockquote>
-			    <blockquote>
-			      <p>Nah, I hate it -_-</p>
-			      <footer>
-			        Comment by <em>Anonymous</em> on <span>Sep 12, 2014, 11:00:00 PM</span>
-			      </footer>
-			    </blockquote>
 			  </div>
-			</div>
-			<!-- /comments -->
+			</div>				
+		</div>
 
-		</section>	
+		<!-- /comments -->
 	</div>
 	<script src="js/lib/angular.min.js"></script>
 	<script src="js/app.js"></script>

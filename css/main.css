@@ -22,3 +22,16 @@ ul li {
 .nav-tabs {
   margin-bottom: 10px;
 }
+
+.genere {
+	background-color: grey;
+	border: solid 1px white;
+}
+
+.ng-invalid.ng-dirty {
+	border-color: red;
+}
+
+.ng-valid.ng-dirty {
+	border-color: green;
+}

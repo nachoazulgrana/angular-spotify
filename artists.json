@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Callejeros",
+    "genere": [ "Rock", "Rocanrol" ],
+    "albums": [ "Sed", "Presion", "RocanrolesSinDestino", "Escultura"],
+    "description": "Callejeros, también conocidos por la abreviatura CJS, fue una banda de rock argentina formada en 1995 que se disolvió en 2010.1 Su primer nombre fue Río Verde. Musicalmente fue conocida por varias canciones, de las cuales, Una nueva noche fría, es la que tuvo mayor difusión.",
+    "popular": [ "Creo", "Prohibido", "9 de Julio", "Una nueva noche fría", "Tan perfecto que asusta" ],
+    "stats": {
+      "uno": 859390,
+      "dos": 943642,
+      "tres": 544083,
+      "cuatro": 576643,
+      "cinco": 462914
+    }
+  },
+  {
+    "name": "La Beriso",
+    "genere": [ "Rock", "Rocanrol" ],
+    "albums": [ "SoloCanciones", "DescartandoMiserias", "Culpable", "Historias"],
+    "description": "La Beriso es una banda de Rock and roll independiente formada en Avellaneda, Buenos Aires, Argentina, en el año 1998. Su estilo, es representativo del rock callejero y urbano.",
+    "popular": [ "Madrugada", "No Me Olvides", "Traicionero", "Ella", "Otra Noche Más" ],
+    "stats": {
+      "uno": 10,
+      "dos": 20,
+      "tres": 30,
+      "cuatro": 40,
+      "cinco": 50
+    }
+  }
+]

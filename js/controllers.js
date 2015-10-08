@@ -1,7 +1,16 @@
 (function () {
 	angular.module('spotify.controllers', [])
-		.controller('ArtistController', function () {
-			this.artist = {
+		.controller('ArtistsController', ['$scope', '$http', function ($scope, $http){
+			$scope.artists = [];
+
+			$http.get('/artists.json')
+				.success(function (data) {
+					$scope.artists = data;
+				});
+		}])
+
+		.controller('ArtistController', ['$scope', function ($scope) {
+			$scope.artist = {
 				name: "La Beriso",
 				genere: [ "Rock", "Rocanrol" ],
 				albums: [ "SoloCanciones", "DescartandoMiserias", "Culpable", "Historias"],
@@ -15,7 +24,7 @@
 					otranochemas: 462914
 				}
 			};
-		})
+		}])
 
 		.controller('TabsController', function () {
 			this.tab = 1;

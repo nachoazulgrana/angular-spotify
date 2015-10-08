@@ -17,11 +17,11 @@
 				description: "La Beriso es una banda de Rock and roll independiente formada en Avellaneda, Buenos Aires, Argentina, en el año 1998. Su estilo, es representativo del rock callejero y urbano.",
 				popular: [ "Madrugada", "No Me Olvides", "Traicionero", "Ella", "Otra Noche Más" ],
 				stats: {
-					madrugada: 859390,
-					nomeolvides: 943642,
-					traicionero: 544083,
-					ella: 576643,
-					otranochemas: 462914
+					uno: 859390,
+					dos: 943642,
+					tres: 544083,
+					cuatro: 576643,
+					cinco: 462914
 				}
 			};
 		}])
